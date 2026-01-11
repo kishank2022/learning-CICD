@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -11,6 +11,8 @@
 	<groupId>com.learning.cicd.pipeline</groupId>
 	<artifactId>com.learning.cicd.pipeline</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+<!--	set packaging to jar file in pom.xml file -->
+	<packaging>jar</packaging>
 	<name>learning-cicd-pipeline</name>
 	<description>This project is for learning CICD Pipeline</description>
 	<url/>
@@ -49,6 +51,8 @@
 	</dependencies>
 
 	<build>
+<!--	 write the final name of the jar file in target foolder-->
+		<finalName>learning-cicd-app</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
