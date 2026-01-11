@@ -8,7 +8,7 @@ public class LearningCicdPipelineApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LearningCicdPipelineApplication.class, args);
-		System.out.println("Hello 2");
+		System.out.println("Hello tomcat server pe project run karke dega jenkins");
 	}
 
 }
