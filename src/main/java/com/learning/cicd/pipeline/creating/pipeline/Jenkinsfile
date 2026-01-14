@@ -15,12 +15,17 @@ pipeline{
     
     // this post will work only after completing all the stage in stages
     post{
-		always{
+		
+		always{ // always will work in any scenario
 			bat 'echo "KISHAN MAHESH KUSHWAHA ALWAYS"'
 		}
 		
-		success{
+		success{ // success will run only after all the stage get completed and we do not get any error while buildng the project
 			bat 'echo "KISHAN MAHESH KUSHWAHA SUCCESS"'
+		}
+		
+		failure{ // failure will work only if we get some error while running the jenkins project
+			bat 'echo "KISHAN MAHESH KUSHWAHA FAILURE"'
 		}
 	} 
 }
