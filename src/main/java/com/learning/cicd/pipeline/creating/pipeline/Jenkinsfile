@@ -8,7 +8,7 @@ pipeline{
         }
         stage("run"){
             steps{
-				bat 'java -cp src\main\java com.learning.cicd.pipeline.creating.pipeline.Test'
+				bat 'java -cp src\\main\\java com.learning.cicd.pipeline.creating.pipeline.Test'
 			}
         }
     }
