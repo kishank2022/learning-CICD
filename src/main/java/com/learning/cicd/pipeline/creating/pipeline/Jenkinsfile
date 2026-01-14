@@ -11,5 +11,16 @@ pipeline{
 				bat 'java -cp src\\main\\java com.learning.cicd.pipeline.creating.pipeline.Test'
 			}
         }
-    } 
+    }
+    
+    // this post will work only after completing all the stage in stages
+    post{
+		always{
+			bat 'echo "KISHAN MAHESH KUSHWAHA ALWAYS"'
+		}
+		
+		success{
+			bat 'echo "KISHAN MAHESH KUSHWAHA SUCCESS"'
+		}
+	} 
 }
