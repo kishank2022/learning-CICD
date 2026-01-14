@@ -11,5 +11,5 @@ pipeline{
 				bat 'java -cp src\\main\\java com.learning.cicd.pipeline.creating.pipeline.Test'
 			}
         }
-    }
+    } 
 }
