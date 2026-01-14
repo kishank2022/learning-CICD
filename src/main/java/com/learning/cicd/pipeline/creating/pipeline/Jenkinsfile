@@ -2,13 +2,13 @@ pipeline{
     agent any
     stages{
         stage("compile"){
-			steps{
-				bat 'javac Test.java'
+			steps{ // D:\kishan.k\CICD\com.learning.cicd.pipeline\src\main\java\com\learning\cicd\pipeline\creating\pipeline
+				bat 'javac src\\main\\java\\com\\learning\\cicd\\pipeline\\creating\\pipeline\\Test.java'
 			}            
         }
         stage("run"){
             steps{
-				bat 'java Test'
+				bat 'java -cp src\\main\\java\\com\\learning\\cicd\\pipeline\\creating\\pipeline Test'
 			}
         }
     }
