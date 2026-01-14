@@ -1,5 +1,10 @@
 pipeline{
     agent any
+    
+    environment{  // we can use this environment variables in the Jenkinsfile.
+		VERSION_NAME="1.34"
+	}
+    
     stages{
         stage("compile"){
 			steps{ // D:\kishan.k\CICD\com.learning.cicd.pipeline\src\main\java\com\learning\cicd\pipeline\creating\pipeline
@@ -18,6 +23,7 @@ pipeline{
 		
 		always{ // always will work in any scenario
 			bat 'echo "KISHAN MAHESH KUSHWAHA ALWAYS"'
+			bat 'echo "KISHAN MAHESH KUSHWAHA ALWAYS ${VERSION_NAME}"'
 		}
 		
 		success{ // success will run only after all the stage get completed and we do not get any error while buildng the project
